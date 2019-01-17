@@ -1,0 +1,9 @@
+---
+label: Plan Rates
+hide_body: false
+is_partial: false
+fields:
+- type: blocks
+  name: this_is_a_block
+  label: This is a block
+  description: i am not sure what i am doing
