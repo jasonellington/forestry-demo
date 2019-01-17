@@ -27,3 +27,13 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: select
+  name: was_this_page_helpful_
+  config:
+    source:
+      type: simple
+    options:
+    - 'yes'
+    - " no"
+  label: Was This Page Helpful?
+  description: please tell us if you enjoyed this
