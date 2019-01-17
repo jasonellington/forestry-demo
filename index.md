@@ -31,4 +31,4 @@ show_news: true
 show_staff: false
 
 ---
-this is content
+this is contents
