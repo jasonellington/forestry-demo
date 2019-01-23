@@ -3,39 +3,62 @@ label: post
 hide_body: false
 is_partial: false
 fields:
+- type: text
+  label: Type
+  name: type
+  description: the type of page
+  default: partner
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
-- type: text
-  label: Sub Heading
-  name: sub_heading
-  default: ''
-- name: date
-  label: Publish Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: tags
-  label: Tags
-  type: tag_list
-  hidden: false
-  default: ''
-- type: file
-  name: banner_image
-  label: Banner Image
-  description: Ideal dimensions 2500px by 1200px
-- type: list
-  name: related_posts
-  label: Related Posts
+- type: select
+  name: partner_state
   config:
-    use_select: true
     source:
-      type: pages
-      section: posts
-- name: layout
+      type: simple
+    options:
+    - New York
+    - " New Jersey"
+    - Connecticut
+  label: Partner State
+  description: choose the state the partner is located in
+  default: New York
+- type: select
+  name: partner_product
+  config:
+    source:
+      type: simple
+    options:
+    - Dental
+    - Accident
+    - Critical Illness
+    - Vision
+    - Pet
+  label: Partner Product
+  description: select the product the partner is offering
+  default: Dental
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    options:
+    - partner-default
+    - partner-dental
+    - partner-multiple
+    - partner-dental-2
   label: Layout
-  type: text
-  hidden: true
-  default: post
+  description: choose the layout for this page
+- type: list
+  name: available_plans
+  label: Available Plans
+  description: chose the plans available for this partner
+  config:
+    min: '1'
+    max: '4'
+  default:
+  - Advantage Bronze
+  - Advantage Silver
+  - Advantage Gold
