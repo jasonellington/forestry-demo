@@ -7,7 +7,7 @@ available_plans:
 - Advantage Silver
 - Advantage Gold
 title: Jason's Insurance
-layout: ''
+layout: partner-dental-2
 date: 2019-01-24 14:26:10 +0000
 
 ---
