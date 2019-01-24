@@ -1,6 +1,6 @@
 ---
 type: partner
-partner_state: New York
+partner_state: " New Jersey"
 partner_product: Dental
 available_plans:
 - Advantage Bronze
